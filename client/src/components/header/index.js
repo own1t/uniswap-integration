@@ -23,7 +23,7 @@ const Header = ({ toggle }) => {
   return (
     <Nav>
       <NavContainer>
-        <NavLogo href="http://localhost:3000/">
+        <NavLogo href="https://uniswap-c0b91.web.app/">
           <SwapHorizontalCircle />
           <h1>Uniswap Integration</h1>
         </NavLogo>
