@@ -26,7 +26,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"}],\"name\":\"getPair\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/uni/contracts/IUniswap.sol\":\"IUniswapV2Factory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/uni/contracts/IUniswap.sol\":{\"keccak256\":\"0xc50d8789c4bf0f3b8fd477f9cda682a030a61a62214265fcc39f1e169d1c26b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8d6f26190094218fc740ee3b4505b769baf2ac581dbe1d8eceec5cb1e9494a7d\",\"dweb:/ipfs/QmcdUeH8dXNqdqfCuLmyvFzicDvQWi5EGHJsF6p9i4xK27\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.7.6+commit.7338295f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token0\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1\",\"type\":\"address\"}],\"name\":\"getPair\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/ryan/Desktop/Projects/final/uniswap-integration/contracts/IUniswap.sol\":\"IUniswapV2Factory\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/ryan/Desktop/Projects/final/uniswap-integration/contracts/IUniswap.sol\":{\"keccak256\":\"0xc50d8789c4bf0f3b8fd477f9cda682a030a61a62214265fcc39f1e169d1c26b6\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8d6f26190094218fc740ee3b4505b769baf2ac581dbe1d8eceec5cb1e9494a7d\",\"dweb:/ipfs/QmcdUeH8dXNqdqfCuLmyvFzicDvQWi5EGHJsF6p9i4xK27\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -35,9 +35,9 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.7.3;\n\ninterface IUniswapV2Router {\n    function factory() external pure returns (address);\n\n    function WETH() external pure returns (address);\n\n    function getAmountsOut(uint256 amountIn, address[] memory path)\n        external\n        view\n        returns (uint256[] memory amounts);\n\n    function swapExactTokensForTokens(\n        uint256 amountIn,\n        uint256 amountOutMin,\n        address[] calldata path,\n        address to,\n        uint256 deadline\n    ) external returns (uint256[] memory amounts);\n\n    function addLiquidity(\n        address tokenA,\n        address tokenB,\n        uint256 amountADesired,\n        uint256 amountBDesired,\n        uint256 amountAMin,\n        uint256 amountBMin,\n        address to,\n        uint256 deadline\n    )\n        external\n        returns (\n            uint256 amountA,\n            uint256 amountB,\n            uint256 liquidity\n        );\n\n    function removeLiquidity(\n        address tokenA,\n        address tokenB,\n        uint256 liquidity,\n        uint256 amountAMin,\n        uint256 amountBMin,\n        address to,\n        uint256 deadline\n    ) external returns (uint256 amountA, uint256 amountB);\n}\n\ninterface IUniswapV2Factory {\n    function getPair(address token0, address token1) external returns (address);\n}\n",
-  "sourcePath": "/Users/ryan/Desktop/Projects/uni/contracts/IUniswap.sol",
+  "sourcePath": "/Users/ryan/Desktop/Projects/final/uniswap-integration/contracts/IUniswap.sol",
   "ast": {
-    "absolutePath": "/Users/ryan/Desktop/Projects/uni/contracts/IUniswap.sol",
+    "absolutePath": "/Users/ryan/Desktop/Projects/final/uniswap-integration/contracts/IUniswap.sol",
     "exportedSymbols": {
       "IUniswapV2Factory": [
         96
@@ -1228,7 +1228,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/Users/ryan/Desktop/Projects/uni/contracts/IUniswap.sol",
+      "absolutePath": "/Users/ryan/Desktop/Projects/final/uniswap-integration/contracts/IUniswap.sol",
       "exportedSymbols": {
         "IUniswapV2Factory": [
           96
@@ -2501,7 +2501,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.4",
-  "updatedAt": "2021-04-18T10:09:47.626Z",
+  "updatedAt": "2021-04-23T03:32:14.857Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

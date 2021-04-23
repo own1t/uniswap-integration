@@ -55,7 +55,7 @@ export const InputLabel = styled.div`
   /* border: 1px solid red; */
 
   position: relative;
-  flex: 0.3;
+  flex: 0.4;
   color: #fff;
 `;
 

@@ -86,7 +86,7 @@ export const NavBox = styled.div`
   }
 
   > a {
-    color: #ff6bb2;
+    color: #000;
     text-decoration: none;
     margin-left: 5px;
   }
@@ -121,7 +121,7 @@ export const NavBox2 = styled.div`
   }
 
   > a {
-    color: #ff6bb2;
+    color: #000;
     text-decoration: none;
     margin-left: 5px;
   }

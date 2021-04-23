@@ -1,8 +1,8 @@
-![alt text](https://github.com/own1t/uniswap-integration/blob/main/previews/uniswap-1.png?raw=true)
+![alt text](https://github.com/own1t/uniswap-integration/blob/main/previews/uniswap-5.png?raw=true)
 
-![alt text](https://github.com/own1t/uniswap-integration/blob/main/previews/uniswap-2.png?raw=true)
+![alt text](https://github.com/own1t/uniswap-integration/blob/main/previews/uniswap-6.png?raw=true)
 
-![alt text](https://github.com/own1t/uniswap-integration/blob/main/previews/uniswap-4.png?raw=true)
+![alt text](https://github.com/own1t/uniswap-integration/blob/main/previews/uniswap-7.png?raw=true)
 
 ## Uniswap Integration
 
@@ -19,3 +19,5 @@
 - Deployed the application with Firebase.
 
 You can check the deployed application from <a href="https://uniswap-c0b91.web.app">here</a>.
+
+Check out the Video Demo from <a href="https://vimeo.com/540521325">here</a>.

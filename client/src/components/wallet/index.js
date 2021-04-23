@@ -45,7 +45,6 @@ const Wallet = ({ web3, contracts }) => {
 
       const balances = await getBalances(tokens[0].ticker);
 
-      console.log(balances);
       setTokens(tokens);
       setSelectedToken(tokens[0].ticker);
       setWalletBalance(balances.fixedWalletBalance);
@@ -189,9 +188,9 @@ const Wallet = ({ web3, contracts }) => {
           </InputLabel>
           <InputBox>
             <input
-              type="number"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
+              required
             />
           </InputBox>
         </InputRow>

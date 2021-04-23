@@ -26,7 +26,7 @@ export const ColorDivider = styled.div`
     height: 20%;
     bottom: 0;
     left: 5%;
-    background: #fffd87;
+    background: #ff6bb2;
   }
 
   &:nth-child(3) {
@@ -34,7 +34,7 @@ export const ColorDivider = styled.div`
     height: 20%;
     bottom: 0;
     left: 30%;
-    background: #00d2ff;
+    background: #ff6bb2;
   }
 `;
 

@@ -14,15 +14,15 @@ import {
   Wrapper,
 } from "./AppElements";
 
-import LoadingContainer from "../components/loading-container";
-import FlipCard from "../components/flip-card/index";
-import Header from "../components/header";
-import Wallet from "../components/wallet";
-import AddToken from "../components/add-token";
-import AmountOut from "../components/amount-out";
+import LoadingContainer from "../components/LoadingContainer";
+import FlipCard from "../components/FlipCard";
+import Header from "../components/Header";
+import Wallet from "../components/Wallet";
+import AddToken from "../components/AddToken";
+import AmountOut from "../components/AmountOut";
 
-import CardBack from "../components/card-back";
-import CardFront from "../components/card-front";
+import Liquidity from "../components/Liquidity";
+import Swap from "../components/Swap";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -92,8 +92,8 @@ const App = () => {
               <FlipCard
                 web3={web3}
                 contracts={contracts}
-                front={<CardFront web3={web3} contracts={contracts} />}
-                back={<CardBack web3={web3} contracts={contracts} />}
+                front={<Swap web3={web3} contracts={contracts} />}
+                back={<Liquidity web3={web3} contracts={contracts} />}
               />
             </Wrapper>
             <Wrapper>
